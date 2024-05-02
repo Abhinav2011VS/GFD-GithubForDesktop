@@ -1,0 +1,32 @@
+{
+  "build": {
+    "appId": "net.abhinav.gfd",
+    "productName": "Github For Desktop",
+    "publish": {
+      "provider": "generic",
+      "url": "https://abhinav2011vs.github.io/App-Universe/apps/gfd",
+      "channel": "latest"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.png"
+    }
+  },
+  "description": "Github For Desktop",
+  "devDependencies": {
+    "electron": "^29.3.1",
+    "electron-builder": "24.13.3",
+    "electron-updater": "^6.2.1",
+    "eslint": "9.0.0"
+  },
+  "main": "main.js",
+  "name": "github-for-desktop",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "version": "1.10.0"
+}
